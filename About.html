@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/contacts.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            background: #0F2027;
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            color: white;
+            font-size: 20px;
+            text-justify: inter-word;
+        }
+
+            .about-section h1 {
+                color: #17d1ac;
+                font-size: 3rem;
+                text-align: center;
+            }
+            .about-section h2 {
+                color: #17d1ac;
+                font-size: 30px;
+                text-align: center;
+            }
+
+        .container {
+            padding: 0 16px;
+            text-align: center;
+            
+        }
+
+       .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+
+       }
+        #about-model {
+            padding: 50px 450px;
+            align-items: center;
+            background: #0F2027; 
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+        }
+
+        .title {
+           color: white;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-section">
+        <h1><font style="border-bottom: 5px solid #ff0000;">About</font>  <font style="border-top: 5px solid #ff0000;">  Us</h1>
+    </div>
+    <section id="about-model">
+        <img alt="model" src="Images/1.png" />
+    </section>
+    <div class="about-section">
+        <center>
+            <h2>Bachelor of Science in Information Technology</h2>
+            <p>I graduated from TCMS with honors<br /> 
+            and was also on the Badminton Varsity Team.</p>
+            <p>I was born on March 19, 2002,<br /> 
+            and I've spent most of my life sitting, eating, and watching.</p>
+            <p>
+                Webinar Eperiences<br /><br />
+                TechWeek 2021/Coding Blocks<br />
+                PHINMA EDUCATION: Country Solution<br />
+                PHINMA EDUCATION: Global and Tech Solutions<br />
+                ADVOCACY PROJECT: A Dive into the Different Settings
+            </p>
+        </center>
+    </div>
+</body>
+
+</html>

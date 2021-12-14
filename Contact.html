@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tittle></tittle>
+    <link rel="stylesheet" href="CSS/contacts.css" />
+</head>
+
+<body onload=display_ct();>
+    <script type="text/javascript">
+
+        function display_c() {
+            var refresh = 1000;
+            mytime = setTimeout('display_ct()', refresh)
+        }
+
+        function display_ct() {
+            var x = new Date()
+            document.getElementById('ct').innerHTML = x;
+            display_c();
+        }
+    </script>
+    <center><p id='ct'></p></center>
+
+    <section id="contact-form">
+        <form action="mailto:cyrus.john.burca@adamson.edu.ph" method="post" encypte="text/plain">>
+            <div class="contact-left">
+                <br /> 
+                <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Mai</font><font color="bold #1B1B1B">l</font><font color=" bold #1B1B1B">  Us</font></h1>
+                <br />
+                <br />
+                <div class="f-name">
+                    <font>Name</font>
+                    <input type="text" placeholder="Full Name" />
+                </div>
+                <div class="f-email">
+                    <font>Email</font>
+                    <input type="email" placeholder="Sample@gmail.com" />
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="message">
+                    <font>Note</font>
+                    <textarea name="message" rows="5" cols="20" placeholder="Type Message..."></textarea>
+                </div>
+                <button>submit</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
